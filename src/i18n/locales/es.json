@@ -1,0 +1,42 @@
+{
+  "locale": {
+    "en": "Inglés",
+    "uk": "Ukraniano",
+    "es": "Español"
+  },
+  "header": {
+    "prg01": "Proyecto-1",
+    "prg02": "Proyecto-2",
+    "prg03": "Proyecto-3",
+    "about": "Sobre"
+  },
+  "footer": {
+    "text1": "Diseñado por ",
+    "text2": "Zorger",
+    "text3": ".",
+    "text4": "Todos los derechos reservados"
+  },
+  "project1": {
+    "name": "Proyecto № 1",
+    "disc": "Descripción"
+  },
+  "project2": {
+    "name": "Proyecto № 2",
+    "disc": "Descripción"
+  },
+  "project3": {
+    "name": "Proyecto № 3",
+    "disc": "Descripción"
+  },
+  "about": {
+    "title": "Mis proyectos Three.js",
+    "more01": "Más información...",
+    "more02": "Este proyecto brinda una oportunidad...etc.",
+    "more03": "Todo esto fue posible gracias al uso de...",
+    "more04": "¡Hay MUCHAS cosas interesantes aquí! \uD83D\uDE09\uD83E\uDD13",
+    "more05": "¡Bienvenido! \uD83E\uDD29\uD83D\uDE0E",
+    "technologies": "Tecnologías",
+    "name": "Nombre",
+    "version": "Versión"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "locale": {
+    "en": "English",
+    "uk": "Ukrainian",
+    "es": "Spanish"
+  },
+  "header": {
+    "prg01": "Project-1",
+    "prg02": "Project-2",
+    "prg03": "Project-3",
+    "about": "About"
+  },
+  "footer": {
+    "text1": "Designed By ",
+    "text2": "Zorger",
+    "text3": ".",
+    "text4": "All rights reserved"
+  },
+  "project1": {
+    "name": "Project № 1",
+    "disc": "Description"
+  },
+  "project2": {
+    "name": "Project № 2",
+    "disc": "Description"
+  },
+  "project3": {
+    "name": "Project № 3",
+    "disc": "Description"
+  },
+  "about": {
+    "title": "My Three.js Projects",
+    "more01": "More information...",
+    "more02": "This project provides an opportunity... etc.",
+    "more03": "All this became possible thanks to the use of...",
+    "more04": "There are a LOT of interesting things here! \uD83D\uDE09\uD83E\uDD13",
+    "more05": "Welcome! \uD83E\uDD29\uD83D\uDE0E",
+    "technologies": "Technologies",
+    "name": "Name",
+    "version": "Version"
+  }
+}
