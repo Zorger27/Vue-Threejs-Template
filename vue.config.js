@@ -1,7 +1,7 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin')
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
-// const SitemapPlugin = require('sitemap-webpack-plugin').default
+const SitemapPlugin = require('sitemap-webpack-plugin').default
 
 module.exports = {
   pages: {
@@ -13,7 +13,7 @@ module.exports = {
     }
   },
   pwa: {
-    // manifestPath: "https://vue-template-js.vercel.app/assets/favicon/manifest.webmanifest",
+    manifestPath: "https://vue-threejs-template.vercel.app/assets/favicon/manifest.webmanifest",
     iconPaths: {
       favicon32: null,
       favicon16: null,
@@ -63,7 +63,7 @@ module.exports = {
           {attributes: {property: 'twitter:description', content: 'Vue.js & Three.js template'}},
           // {attributes: {property: 'og:image', content: 'https://vue-template-js.vercel.app/assets/ogimage/image_all.jpg'}},
           // {attributes: {property: 'twitter:image', content: 'https://vue-template-js.vercel.app/assets/ogimage/image_all.jpg'}},
-          // {attributes: {property: 'og:url', content: 'https://vue-template-js.vercel.app'}},
+          {attributes: {property: 'og:url', content: 'https://vue-threejs-template.vercel.app'}},
           {attributes: {property: 'og:type', content: 'website'}},
           {attributes: {property: 'twitter:card', content: 'summary_large_image'}}
         ]
@@ -82,18 +82,18 @@ module.exports = {
           developerURL: null
         }
       }),
-      // new SitemapPlugin({
-      //   base: 'https://vue-template-js.vercel.app', // Базовый URL моего сайта
-      //   paths: [
-      //     { path: '/', priority: 1, changefreq: 'always' },
-      //     { path: '/project2', priority: 1, changefreq: 'daily' },
-      //     { path: '/project3', priority: 1, changefreq: 'daily' },
-      //     { path: '/about', priority: 1, changefreq: 'always' },
-      //   ],
-      //   options: {
-      //     skipgzip: true
-      //   },
-      // }),
+      new SitemapPlugin({
+        base: 'https://vue-threejs-template.vercel.app', // Базовый URL моего сайта
+        paths: [
+          { path: '/', priority: 1, changefreq: 'always' },
+          { path: '/project2', priority: 1, changefreq: 'daily' },
+          { path: '/project3', priority: 1, changefreq: 'daily' },
+          { path: '/about', priority: 1, changefreq: 'always' },
+        ],
+        options: {
+          skipgzip: true
+        },
+      }),
     ]
   }
 }

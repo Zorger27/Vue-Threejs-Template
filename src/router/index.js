@@ -25,10 +25,10 @@ const routes = [
         //   property: 'og:image',
         //   content: 'https://vue-template-js.vercel.app/assets/ogimage/image_all.jpg'
         // },
-        // {
-        //   property: 'og:url',
-        //   content: 'https://vue-template-js.vercel.app'
-        // },
+        {
+          property: 'og:url',
+          content: 'https://vue-threejs-template.vercel.app'
+        },
         {
           property: 'og:type',
           content: 'website'
@@ -56,10 +56,10 @@ const routes = [
         //   property: 'og:image',
         //   content: 'https://vue-template-js.vercel.app/assets/ogimage/image_all.jpg'
         // },
-        // {
-        //   property: 'og:url',
-        //   content: 'https://vue-template-js.vercel.app'
-        // },
+        {
+          property: 'og:url',
+          content: 'https://vue-threejs-template.vercel.app'
+        },
         {
           property: 'og:type',
           content: 'website'
@@ -86,10 +86,10 @@ const routes = [
         //   property: 'og:image',
         //   content: 'https://vue-template-js.vercel.app/assets/ogimage/image_all.jpg'
         // },
-        // {
-        //   property: 'og:url',
-        //   content: 'https://vue-template-js.vercel.app'
-        // },
+        {
+          property: 'og:url',
+          content: 'https://vue-threejs-template.vercel.app'
+        },
         {
           property: 'og:type',
           content: 'website'
@@ -116,10 +116,10 @@ const routes = [
         //   property: 'og:image',
         //   content: 'https://vue-template-js.vercel.app/assets/ogimage/image_all.jpg'
         // },
-        // {
-        //   property: 'og:url',
-        //   content: 'https://vue-template-js.vercel.app'
-        // },
+        {
+          property: 'og:url',
+          content: 'https://vue-threejs-template.vercel.app'
+        },
         {
           property: 'og:type',
           content: 'website'
@@ -146,10 +146,10 @@ const routes = [
         //   property: 'og:image',
         //   content: 'https://vue-template-js.vercel.app/assets/ogimage/image_all.jpg'
         // },
-        // {
-        //   property: 'og:url',
-        //   content: 'https://vue-template-js.vercel.app'
-        // },
+        {
+          property: 'og:url',
+          content: 'https://vue-threejs-template.vercel.app'
+        },
         {
           property: 'og:type',
           content: 'website'
