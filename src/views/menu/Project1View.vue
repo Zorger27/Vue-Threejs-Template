@@ -2,17 +2,19 @@
 // import { ref, onMounted, onUnmounted } from 'vue';
 // import * as THREE from 'three';
 // import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
+import ToggleFullScreen from "@/components/util/ToggleFullScreen.vue";
+import CanvasFullScreen from "@/components/util/CanvasFullScreen.vue";
 
 export default {
   name: 'Project1',
-  components: {},
+  components: {CanvasFullScreen, ToggleFullScreen},
   methods: {},
 }
 </script>
 
 <template>
   <div class="container">
-    <h1>{{ $t('project1.name') }} <i @click="fullScreenView"><span :class="['fa', 'fa-expand-arrows-alt']"></span></i></h1>
+    <h1>{{ $t('project1.name') }} <CanvasFullScreen :canvasContainer="canvasContainer"></CanvasFullScreen> <ToggleFullScreen></ToggleFullScreen></h1>
     <line></line>
     <div class="scene-container" ref="canvasContainer"></div>
   </div>
