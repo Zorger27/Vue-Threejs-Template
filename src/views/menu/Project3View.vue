@@ -8,90 +8,90 @@ import ToggleFullScreen from "@/components/util/ToggleFullScreen.vue";
 export default {
   name: 'Project3',
   components: {ToggleFullScreen, CanvasFullScreen},
-  setup() {
-    const canvasContainer = ref(null);
-    let scene, camera, renderer, cube;
-
-    const init = () => {
-      // Создаем сцену
-      scene = new THREE.Scene();
-
-      // Создаем камеру
-      camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-      camera.position.z = 3;
-
-      // Создаем рендерер
-      // renderer = new THREE.WebGLRenderer();
-      renderer = new THREE.WebGLRenderer({ alpha: true });
-      // renderer.setSize(window.innerWidth, window.innerHeight);
-      renderer.setSize(window.innerWidth, window.innerHeight);
-
-
-      const controls = new OrbitControls(camera, renderer.domElement);
-      controls.enableDamping = true;
-
-      scene.add(camera);
-
-      // Создаем геометрию и материал для куба
-      const geometry = new THREE.BoxGeometry(1, 1, 1);
-      const materials = [
-        new THREE.MeshBasicMaterial({ color: 0xff0000, transparent: true, opacity: 1 }),
-        new THREE.MeshBasicMaterial({ color: 0x00ff00, transparent: true, opacity: 1 }),
-        new THREE.MeshBasicMaterial({ color: 0x0000ff, transparent: true, opacity: 1 }),
-        new THREE.MeshBasicMaterial({ color: 0xffff00, transparent: true, opacity: 1 }),
-        new THREE.MeshBasicMaterial({ color: 0xff00ff, transparent: true, opacity: 1 }),
-        new THREE.MeshBasicMaterial({ color: 0x00ffff, transparent: true, opacity: 1 }),
-      ];
-      cube = new THREE.Mesh(geometry, materials);
-
-      // Добавляем куб на сцену
-      scene.add(cube);
-
-      // Добавляем рендерер в контейнер
-      canvasContainer.value.appendChild(renderer.domElement);
-
-      // Обновляем сцену
-      const animate = () => {
-        requestAnimationFrame(animate);
-
-        // Обновление контроллеров для вращения сцены
-        controls.update();
-
-        cube.rotation.x += 0.01;
-        cube.rotation.y += 0.01;
-
-        renderer.render(scene, camera);
-      };
-
-      animate();
-    };
-
-    const onWindowResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-
-      renderer.setSize(window.innerWidth, window.innerHeight);
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-      // renderer.render(scene, camera);
-    };
-
-    window.addEventListener('resize', onWindowResize);
-
-    onMounted(() => {
-      init();
-      onWindowResize();
-    });
-
-    onUnmounted(() => {
-      // Выполняем необходимые действия при удалении компонента
-      // Например, очищаем ресурсы Three.js
-      renderer.dispose();
-    });
-
-    return {
-      canvasContainer
-    };
-  },
+  // setup() {
+  //   const canvasContainer = ref(null);
+  //   let scene, camera, renderer, cube;
+  //
+  //   const init = () => {
+  //     // Создаем сцену
+  //     scene = new THREE.Scene();
+  //
+  //     // Создаем камеру
+  //     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+  //     camera.position.z = 3;
+  //
+  //     // Создаем рендерер
+  //     // renderer = new THREE.WebGLRenderer();
+  //     renderer = new THREE.WebGLRenderer({ alpha: true });
+  //     // renderer.setSize(window.innerWidth, window.innerHeight);
+  //     renderer.setSize(window.innerWidth, window.innerHeight);
+  //
+  //
+  //     const controls = new OrbitControls(camera, renderer.domElement);
+  //     controls.enableDamping = true;
+  //
+  //     scene.add(camera);
+  //
+  //     // Создаем геометрию и материал для куба
+  //     const geometry = new THREE.BoxGeometry(1, 1, 1);
+  //     const materials = [
+  //       new THREE.MeshBasicMaterial({ color: 0xff0000, transparent: true, opacity: 1 }),
+  //       new THREE.MeshBasicMaterial({ color: 0x00ff00, transparent: true, opacity: 1 }),
+  //       new THREE.MeshBasicMaterial({ color: 0x0000ff, transparent: true, opacity: 1 }),
+  //       new THREE.MeshBasicMaterial({ color: 0xffff00, transparent: true, opacity: 1 }),
+  //       new THREE.MeshBasicMaterial({ color: 0xff00ff, transparent: true, opacity: 1 }),
+  //       new THREE.MeshBasicMaterial({ color: 0x00ffff, transparent: true, opacity: 1 }),
+  //     ];
+  //     cube = new THREE.Mesh(geometry, materials);
+  //
+  //     // Добавляем куб на сцену
+  //     scene.add(cube);
+  //
+  //     // Добавляем рендерер в контейнер
+  //     canvasContainer.value.appendChild(renderer.domElement);
+  //
+  //     // Обновляем сцену
+  //     const animate = () => {
+  //       requestAnimationFrame(animate);
+  //
+  //       // Обновление контроллеров для вращения сцены
+  //       controls.update();
+  //
+  //       cube.rotation.x += 0.01;
+  //       cube.rotation.y += 0.01;
+  //
+  //       renderer.render(scene, camera);
+  //     };
+  //
+  //     animate();
+  //   };
+  //
+  //   const onWindowResize = () => {
+  //     camera.aspect = window.innerWidth / window.innerHeight;
+  //     camera.updateProjectionMatrix();
+  //
+  //     renderer.setSize(window.innerWidth, window.innerHeight);
+  //     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  //     // renderer.render(scene, camera);
+  //   };
+  //
+  //   window.addEventListener('resize', onWindowResize);
+  //
+  //   onMounted(() => {
+  //     init();
+  //     onWindowResize();
+  //   });
+  //
+  //   onUnmounted(() => {
+  //     // Выполняем необходимые действия при удалении компонента
+  //     // Например, очищаем ресурсы Three.js
+  //     renderer.dispose();
+  //   });
+  //
+  //   return {
+  //     canvasContainer
+  //   };
+  // },
 }
 </script>
 

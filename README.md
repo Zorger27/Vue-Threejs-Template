@@ -6,7 +6,7 @@
 ![Screen](https://github.com/Zorger27/Vue-Threejs-Template/assets/30940416/859111e0-e485-45cb-aeda-03ff7dc5b7a7)
 <br>
 
-+ This is the Starter Development Template on Vue.js with **internationalization**, **routers** and **store**.<br>
++ This is the Starter Development Template on Vue.js + Three.js with **internationalization**, **routers** and **store**.<br>
 + Prepared for connection to **_Google Analytics_** and **_Google Search Console_**.<br>
 + The template is customized and optimized for **PWA** (`Progressive Web App`) technology.<br>
 + Main settings have to made in the ``vue.config.js`` file!<br>
