@@ -1,8 +1,10 @@
 <script>
 import infoStore from "@/store/modules/service/infoStore";
+import {openGraphMixin} from "@/assets/ogimage/openGraphMixin";
 
 export default {
   name: 'About',
+  mixins: [openGraphMixin],
   computed: {
     infoStore() {
       return infoStore;
@@ -13,6 +15,16 @@ export default {
       tableView: false,
       showMore: false,
     };
+  },
+  mounted() {
+    const title = 'About this Project';
+    const metaDescription = 'Template №3';
+    const description = 'About this Project';
+    const imageUrl = 'https://vue-threejs-template.vercel.app/assets/ogimage/bmp/about.jpg';
+    const url = 'https://vue-threejs-template.vercel.app/about';
+
+    // Dynamically set open graph tags
+    this.setOpenGraphTags(metaDescription, title, description, imageUrl, url);
   },
   methods: {
     changeView() {

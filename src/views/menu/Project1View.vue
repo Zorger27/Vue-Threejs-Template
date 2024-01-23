@@ -4,10 +4,22 @@
 // import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 import ToggleFullScreen from "@/components/util/ToggleFullScreen.vue";
 import CanvasFullScreen from "@/components/util/CanvasFullScreen.vue";
+import {openGraphMixin} from "@/assets/ogimage/openGraphMixin";
 
 export default {
   name: 'Project1',
+  mixins: [openGraphMixin],
   components: {CanvasFullScreen, ToggleFullScreen},
+  mounted() {
+    const title = 'Template №3 - Project № 1';
+    const metaDescription = 'Template №3';
+    const description = 'Template №3 - Project № 1';
+    const imageUrl = 'https://vue-threejs-template.vercel.app/assets/ogimage/bmp/project1.jpg';
+    const url = 'https://vue-threejs-template.vercel.app';
+
+    // Dynamically set open graph tags
+    this.setOpenGraphTags(metaDescription, title, description, imageUrl, url);
+  },
   methods: {},
 }
 </script>

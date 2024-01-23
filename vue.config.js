@@ -61,8 +61,8 @@ module.exports = {
           {attributes: {property: 'twitter:title', content: 'Template №3'}},
           {attributes: {property: 'og:description', content: 'Vue.js & Three.js template'}},
           {attributes: {property: 'twitter:description', content: 'Vue.js & Three.js template'}},
-          {attributes: {property: 'og:image', content: 'https://vue-threejs-template.vercel.app/assets/ogimage/image_all.jpg'}},
-          {attributes: {property: 'twitter:image', content: 'https://vue-threejs-template.vercel.app/assets/ogimage/image_all.jpg'}},
+          {attributes: {property: 'og:image', content: 'https://vue-threejs-template.vercel.app/assets/ogimage/bmp/image_all.jpg'}},
+          {attributes: {property: 'twitter:image', content: 'https://vue-threejs-template.vercel.app/assets/ogimage/bmp/image_all.jpg'}},
           {attributes: {property: 'og:url', content: 'https://vue-threejs-template.vercel.app'}},
           {attributes: {property: 'og:type', content: 'website'}},
           {attributes: {property: 'twitter:card', content: 'summary_large_image'}}
