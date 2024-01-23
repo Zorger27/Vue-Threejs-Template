@@ -1,6 +1,6 @@
 {
-    "name": "Template №3",
-    "short_name": "Template",
+    "name": "Three.js template",
+    "short_name": "Three.js template",
     "icons": [
         {
             "src": "./public/assets/favicon-dev/android-chrome-192x192.png",

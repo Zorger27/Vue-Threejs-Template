@@ -1,6 +1,6 @@
 {
-  "name": "Template №3",
-  "short_name": "Template №3",
+  "name": "Three.js template",
+  "short_name": "Three.js template",
   "theme_color": "#4DBA87",
   "start_url": "/",
   "display": "standalone",

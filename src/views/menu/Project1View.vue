@@ -11,9 +11,9 @@ export default {
   mixins: [openGraphMixin],
   components: {CanvasFullScreen, ToggleFullScreen},
   mounted() {
-    const title = 'Template №3 - Project № 1';
-    const metaDescription = 'Template №3';
-    const description = 'Template №3 - Project № 1';
+    const title = 'Three.js template - Project № 1';
+    const metaDescription = 'Vue.js & Three.js template';
+    const description = 'Three.js template - Project № 1';
     const imageUrl = 'https://vue-threejs-template.vercel.app/assets/ogimage/bmp/project1.jpg';
     const url = 'https://vue-threejs-template.vercel.app';
 

@@ -18,7 +18,7 @@ export default {
   },
   mounted() {
     const title = 'About this Project';
-    const metaDescription = 'Template №3';
+    const metaDescription = 'Vue.js & Three.js template';
     const description = 'About this Project';
     const imageUrl = 'https://vue-threejs-template.vercel.app/assets/ogimage/bmp/about.jpg';
     const url = 'https://vue-threejs-template.vercel.app/about';

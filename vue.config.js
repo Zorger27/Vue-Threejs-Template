@@ -9,7 +9,7 @@ module.exports = {
       entry: 'src/main.js',
       template: 'public/index.html',
       filename: 'index.html',
-      title: 'Template №3',
+      title: 'Three.js template',
     }
   },
   pwa: {
@@ -57,8 +57,8 @@ module.exports = {
         metas: [
           // {attributes: {name: 'google-site-verification', content: 'Gq7vrXtN91P1JtoGFo-xrlLMT0PR8u-4P4xs21oRr8Y'}},
           {attributes: {name: 'description', content: 'Vue.js & Three.js template'}},
-          {attributes: {property: 'og:title', content: 'Template №3'}},
-          {attributes: {property: 'twitter:title', content: 'Template №3'}},
+          {attributes: {property: 'og:title', content: 'Three.js template'}},
+          {attributes: {property: 'twitter:title', content: 'Three.js template'}},
           {attributes: {property: 'og:description', content: 'Vue.js & Three.js template'}},
           {attributes: {property: 'twitter:description', content: 'Vue.js & Three.js template'}},
           {attributes: {property: 'og:image', content: 'https://vue-threejs-template.vercel.app/assets/ogimage/bmp/image_all.jpg'}},
@@ -76,7 +76,7 @@ module.exports = {
         prefix: 'assets/favicon/', // Этот префикс для файла index.html, чтобы правильно прописать пути иконок с сервера!
         manifest: './src/assets/manifest/manifest.webmanifest',
         favicons: {
-          appName: 'Template №3',
+          appName: 'Three.js template',
           appDescription: 'Vue.js & Three.js template',
           developerName: 'Zorger',
           developerURL: null
