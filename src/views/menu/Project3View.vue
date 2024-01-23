@@ -11,14 +11,15 @@ export default {
   mixins: [openGraphMixin],
   components: {ToggleFullScreen, CanvasFullScreen},
   mounted() {
+    const mainTitle = 'Three.js - Project № 3';
     const title = 'Three.js template - Project № 3';
     const metaDescription = 'Vue.js & Three.js template';
-    const description = 'Three.js template - Project № 3';
+    const description = 'Vue.js & Three.js template - Project № 3';
     const imageUrl = 'https://vue-threejs-template.vercel.app/assets/ogimage/bmp/project3.jpg';
     const url = 'https://vue-threejs-template.vercel.app/project3';
 
-    // Dynamically set open graph tags
     this.setOpenGraphTags(metaDescription, title, description, imageUrl, url);
+    this.setPageTitle(mainTitle);
   },
   // setup() {
   //   const canvasContainer = ref(null);

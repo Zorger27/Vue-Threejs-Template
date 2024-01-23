@@ -5,14 +5,15 @@ export default {
   name: 'PageNotFound',
   mixins: [openGraphMixin],
   mounted() {
+    const mainTitle = 'Page NOT Found';
     const title = 'Three.js template - Page NOT Found';
     const metaDescription = 'Vue.js & Three.js template';
     const description = 'Three.js template - Page NOT Found';
     const imageUrl = 'https://vue-threejs-template.vercel.app/assets/ogimage/bmp/image_404.jpg';
     const url = 'https://vue-threejs-template.vercel.app';
 
-    // Dynamically set open graph tags
     this.setOpenGraphTags(metaDescription, title, description, imageUrl, url);
+    this.setPageTitle(mainTitle);
   },
   components: {},
   methods: {},

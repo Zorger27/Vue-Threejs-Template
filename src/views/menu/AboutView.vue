@@ -17,14 +17,15 @@ export default {
     };
   },
   mounted() {
-    const title = 'About this Project';
+    const mainTitle = 'About these Projects';
+    const title = 'About these Three.js Projects';
     const metaDescription = 'Vue.js & Three.js template';
-    const description = 'About this Project';
+    const description = 'About these Vue.js & Three.js Projects';
     const imageUrl = 'https://vue-threejs-template.vercel.app/assets/ogimage/bmp/about.jpg';
     const url = 'https://vue-threejs-template.vercel.app/about';
 
-    // Dynamically set open graph tags
     this.setOpenGraphTags(metaDescription, title, description, imageUrl, url);
+    this.setPageTitle(mainTitle);
   },
   methods: {
     changeView() {
