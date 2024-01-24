@@ -1,15 +1,17 @@
 <script>
 // import Vue from "vue";
 import LanguageSwitcher from "@/components/util/LanguageSwitcher.vue";
+import Header3DLogo2 from "@/components/other/Header3DLogo2.vue";
 
 export default {
   name: 'Header',
   components: {
-    LanguageSwitcher,
+    Header3DLogo2,
+    LanguageSwitcher
   },
   data() {
     return {
-      getHeaderLogoImage: require('@/assets/img/header-logo.svg'),
+      // getHeaderLogoImage: require('@/assets/img/header-logo.svg'),
       showMenu: false,
     };
   },
@@ -42,7 +44,8 @@ export default {
         <i :class="['fa', showMenu ? 'fa-times' : 'fa-bars', 'burger-menu-icon']"></i>
       </div>
       <div class="logo" @click="navigateToPortfolio">
-        <img :src="getHeaderLogoImage" alt="Header Logo Image">
+<!--        <img :src="getHeaderLogoImage" alt="Header Logo Image">-->
+        <Header3DLogo2 class="img"></Header3DLogo2>
       </div>
       <language-switcher class="language"></language-switcher>
     </div>
@@ -85,13 +88,12 @@ header {
     .logo {
       grid-area: logo;
       align-items: center;
-      margin-top: 0.3rem;
       align-self: center;
       justify-self: left;
-      img {
-        width: 4rem;
-        height: 4rem;
-        cursor: pointer;
+      .img {
+          width: 4rem;
+          height: 4rem;
+          cursor: pointer;
       }
     }
 
