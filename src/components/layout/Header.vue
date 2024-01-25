@@ -90,7 +90,7 @@ header {
       grid-area: logo;
       align-items: center;
       align-self: center;
-      justify-self: left;
+      justify-content: center;
       display: flex;
       .img {
           width: 4rem;
