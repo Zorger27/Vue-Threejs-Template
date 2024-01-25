@@ -349,6 +349,7 @@ export default {
 <style lang="scss" scoped>
 .scene-container {
   max-height: 100vh;
+  max-width: 100%;
   position: relative;
   overflow: hidden;
   display: flex;
