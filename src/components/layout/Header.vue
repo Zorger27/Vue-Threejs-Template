@@ -78,7 +78,7 @@ header {
   }
 
   .header-logo {
-    margin: 3px;
+    margin: 0.2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -91,6 +91,7 @@ header {
       align-items: center;
       align-self: center;
       justify-self: left;
+      display: flex;
       .img {
           width: 4rem;
           height: 4rem;
