@@ -2,10 +2,14 @@
 // import Vue from "vue";
 import LanguageSwitcher from "@/components/util/LanguageSwitcher.vue";
 import Header3DLogo2 from "@/components/other/Header3DLogo2.vue";
+import Header3DLogo3 from "@/components/other/Header3DLogo3.vue";
+import Header3DLogo1 from "@/components/other/Header3DLogo1.vue";
 
 export default {
   name: 'Header',
   components: {
+    Header3DLogo1,
+    Header3DLogo3,
     Header3DLogo2,
     LanguageSwitcher
   },
@@ -46,6 +50,7 @@ export default {
       <div class="logo" @click="navigateToPortfolio">
 <!--        <img :src="getHeaderLogoImage" alt="Header Logo Image">-->
         <Header3DLogo2 class="img"></Header3DLogo2>
+<!--        <Header3DLogo3 class="img"></Header3DLogo3>-->
       </div>
       <language-switcher class="language"></language-switcher>
     </div>

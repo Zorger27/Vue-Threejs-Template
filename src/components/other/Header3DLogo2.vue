@@ -1,22 +1,39 @@
 <script>
 import {onMounted, onUnmounted, ref} from "vue";
 import * as THREE from "three";
+import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 
 export default {
   name: 'Header3DLogo2',
   methods: {},
   setup() {
     const canvasContainer = ref(null);
-    let scene, camera, renderer;
+    let scene, camera, renderer, controls;
+
+    const updateCameraPosition = () => {
+      // Изменение значения в зависимости от ширины экрана
+      if (window.innerWidth <= 768) {
+        camera.position.set(0, 0, 28);
+      } else {
+        camera.position.set(0, 0, 36);
+      }
+    };
 
     const init = () => {
       scene = new THREE.Scene();
       camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-      camera.position.set(0, 0, 40);
+      updateCameraPosition();
 
       renderer = new THREE.WebGLRenderer({ alpha: true });
       renderer.setSize(window.innerWidth, window.innerHeight);
       canvasContainer.value.appendChild(renderer.domElement);
+
+      controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+      controls.enablePan = false;
+      controls.enableZoom = true;
+      controls.autoRotate = true;
+      controls.autoRotateSpeed = 5.0;
 
       // Создаем маленький кубик
       const smallCubeGeometry1 = new THREE.BoxGeometry(0.8, 0.8, 0.8);
@@ -76,11 +93,13 @@ export default {
 
       scene.add(mainCube1);
 
+      // Устанавливаем углы Эйлера (в радианах) для наклона
+      const euler = new THREE.Euler(Math.PI / 2, 0.25, 0);
+      mainCube1.setRotationFromEuler(euler);
+
       const animate = () => {
         requestAnimationFrame(animate);
-        mainCube1.rotation.x += 0.01;
-        mainCube1.rotation.y += 0.01;
-
+        controls.update();
         renderer.render(scene, camera);
       };
 
@@ -92,6 +111,9 @@ export default {
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+      // Добавляем обновление позиции камеры
+      updateCameraPosition();
     };
 
     window.addEventListener('resize', onWindowResize);

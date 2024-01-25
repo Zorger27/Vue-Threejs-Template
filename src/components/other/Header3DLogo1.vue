@@ -9,12 +9,11 @@ export default {
   setup() {
     const canvasContainer = ref(null);
     let scene, camera, renderer, controls;
-    let rotationPaused = false;
 
     const init = () => {
       scene = new THREE.Scene();
       camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-      camera.position.set(0, 0, 8.5);
+      camera.position.set(0, 0, 85);
 
       renderer = new THREE.WebGLRenderer({ alpha: true });
       renderer.setSize(window.innerWidth, window.innerHeight);
@@ -295,10 +294,6 @@ export default {
       animateOrbit3();
 
       const animate = () => {
-        if (rotationPaused) {
-          // Если вращение на паузе, не вызываем анимацию
-          return;
-        }
         requestAnimationFrame(animate);
         controls.update();
         renderer.render(scene, camera);
@@ -318,15 +313,6 @@ export default {
       // Вращение всей группы сцены
       const sceneRotationAngle = 10; // Угол в градусах
       sceneGroup.rotation.x = THREE.MathUtils.degToRad(sceneRotationAngle);
-
-      // Добавляем обработчик событий для двойного щелчка мыши
-      canvasContainer.value.addEventListener('dblclick', () => {
-        rotationPaused = !rotationPaused; // Инвертируем состояние флага
-        if (!rotationPaused) {
-          // Если вращение возобновляется, снова вызываем анимацию
-          animate();
-        }
-      });
 
       animate(); // Начинаем анимацию сразу после определения функции
     };
@@ -362,7 +348,7 @@ export default {
 
 <style lang="scss" scoped>
 .scene-container {
-  max-height: 70vh;
+  max-height: 100vh;
   position: relative;
   overflow: hidden;
   display: flex;
