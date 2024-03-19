@@ -2,7 +2,7 @@
 [![Use this template](https://img.shields.io/badge/Use%20this%20template-purple?style=for-the-badge)](https://github.com/Zorger27/Vue-Threejs-Template/generate)
 ### You can view my CV (Landing Page) here: [Curriculum VITAE](https://zorger27.github.io)❗️ ###
 ### You can view my Portfolio (SPA) here: [My Portfolio](https://Zorin.Expert)❗️ ###
-### Technologies: [Three.js v.160](https://github.com/mrdoob/three.js/releases), [Orbit controls v.82.1.0](https://threejs.org/docs/#examples/en/controls/OrbitControls), [Vue.js v.3.3.10](https://v3.ru.vuejs.org), VueX, HTML5, CSS3, FlexBox CSS, JavaScript, TypeScript. ###
+### Technologies: Three.js, Orbit controls, Vue.js, VueX, HTML5, CSS3, FlexBox CSS, JavaScript, TypeScript. ###
 ![Screen](https://github.com/Zorger27/Vue-Threejs-Template/assets/30940416/859111e0-e485-45cb-aeda-03ff7dc5b7a7)
 <br>
 
