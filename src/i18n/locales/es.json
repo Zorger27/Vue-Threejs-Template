@@ -31,9 +31,9 @@
   "about": {
     "title": "Mis proyectos Three.js",
     "more01": "Más información...",
-    "more02": "Esta es la plantilla de desarrollo inicial en Vue.js + Three.js con internacionalización, enrutadores y almacenamiento.",
-    "more03": "Preparado para conexión a Google Analytics y Google Search Console. La plantilla está personalizada y optimizada para la tecnología PWA (Progressive Web App).",
-    "more04": "¡Hay MUCHAS cosas interesantes aquí! \uD83D\uDE09\uD83E\uDD13",
+    "more02": "\uD83C\uDF10 Una plantilla inicial conveniente y poderosa para crear aplicaciones de una sola página (SPA) modernas con integración de gráficos 3D.",
+    "more03": "✨ Este sitio minimalista admite tres idiomas (ucraniano, inglés, español) y es completamente adaptable para todos los dispositivos: desde teléfonos inteligentes hasta computadoras de escritorio. \uD83D\uDCCA La plantilla está preparada para integrarse con Google Analytics y Google Search Console, lo que la hace ideal para el análisis y monitoreo del rendimiento.",
+    "more04": "\uD83D\uDE80 Gracias a su flexibilidad y escalabilidad, esta solución es perfecta para cualquier proyecto web con soporte para gráficos 3D. \uD83D\uDCBB\uD83C\uDF1F",
     "more05": "¡Bienvenido! \uD83E\uDD29\uD83D\uDE0E",
     "technologies": "Tecnologías",
     "name": "Nombre",

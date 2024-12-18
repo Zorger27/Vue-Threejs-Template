@@ -17,10 +17,10 @@ export default {
     };
   },
   mounted() {
-    const mainTitle = 'About these Projects';
-    const title = 'About these Three.js Projects';
+    const mainTitle = 'About this Project';
+    const title = 'About this Project';
     const metaDescription = 'Vue.js & Three.js template';
-    const description = 'About these Vue.js & Three.js Projects';
+    const description = 'About these Vue.js & Three.js Project';
     const imageUrl = 'https://vue-threejs-template.vercel.app/assets/ogimage/bmp/about.jpg';
     const url = 'https://vue-threejs-template.vercel.app/about';
 
@@ -46,7 +46,7 @@ export default {
                                                                              class="fas fa-hand-pointer"></i></h2>
     <p v-if="showMore" style="margin: 0">{{$t ('about.more02')}}</p>
     <p v-if="showMore" style="margin: 0">{{$t ('about.more03')}}</p>
-    <h3 v-if="showMore" style="color: deeppink; margin: 0.5rem">{{$t ('about.more04')}}</h3>
+    <p v-if="showMore" style="margin: 0">{{$t ('about.more04')}}</p>
     <h3 v-if="showMore" style="color: deeppink; margin: 0.5rem">{{$t ('about.more05')}}</h3>
     <line></line>
     <div v-if="tableView" class="table">

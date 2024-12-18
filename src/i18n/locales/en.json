@@ -31,9 +31,9 @@
   "about": {
     "title": "My Three.js Projects",
     "more01": "More information...",
-    "more02": "This is the Starter Development Template on Vue.js + Three.js with internationalization, routers and store.",
-    "more03": "Prepared for connection to Google Analytics and Google Search Console. The template is customized and optimized for PWA (Progressive Web App) technology.",
-    "more04": "There are a LOT of interesting things here! \uD83D\uDE09\uD83E\uDD13",
+    "more02": "\uD83C\uDF10 A convenient and powerful starter template for creating modern Single Page Applications (SPA) with 3D graphics integration.",
+    "more03": "✨ This minimalist site supports three languages (Ukrainian, English, Spanish) and is fully responsive for all devices: from smartphones to desktops. \uD83D\uDCCA The template is prepared for integration with Google Analytics and Google Search Console, making it ideal for performance analysis and monitoring.",
+    "more04": "\uD83D\uDE80 Thanks to its flexibility and scalability, this solution is perfect for any web project that supports 3D graphics! \uD83D\uDCBB\uD83C\uDF1F",
     "more05": "Welcome! \uD83E\uDD29\uD83D\uDE0E",
     "technologies": "Technologies",
     "name": "Name",
