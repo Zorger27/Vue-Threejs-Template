@@ -31,7 +31,7 @@ export default {
     <p class="footer-text-mob">{{ $t('footer.text1') }}
       <b><a href="https://zorger27.github.io" title="CV (Landing Page)" target="_blank">{{ $t('footer.text2') }}
       </a></b>{{ $t('footer.text3') }}<br>
-      <span class="copyright"><b>&copy; 2023―{{ currentYear }}</b> - {{ $t('footer.text4') }}</span>
+      <span class="copyright"><b>&copy; 2024―{{ currentYear }}</b> - {{ $t('footer.text4') }}</span>
     </p>
     <SocialSharing></SocialSharing>
   </footer>
