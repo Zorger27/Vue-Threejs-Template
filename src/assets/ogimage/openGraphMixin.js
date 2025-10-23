@@ -41,6 +41,7 @@ export const openGraphMixin = {
         { name: 'robots', content: 'index,follow' }
       ];
 
+
       metaTags.forEach((metaTag) => {
         const meta = document.createElement('meta');
         if (metaTag.property) {
